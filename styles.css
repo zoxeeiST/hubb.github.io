@@ -64,7 +64,6 @@ section {
     height: 100vh;
     padding-top: 80px;
     color: white;
-    border-top: solid 3px black;
     text-align: center;
     opacity: 0;
     transform: translateY(20px);
