@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto Slab", serif;
+    background-color: rgb(138, 39, 39);
+    
+}
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track background */
+}
+::-webkit-scrollbar-thumb {
+    background: #888; /* Handle background */
+    border-radius: 6px; /* Handle rounded edges */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Handle background on hover */
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(138, 39, 39);
+    padding: 0 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    color: white;
+}
+header h1 {
+    font-weight: 300;
+}
+.nav_links {
+    list-style: none;
+    display: flex;
+}
+.nav_links li {
+    margin-left: 20px;
+}
+.nav_links li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+.nav_links li a:hover {
+    color: rgb(251, 10, 10);
+}
+
+section {
+    background-color: rgb(138, 39, 39);
+    height: 100vh;
+    padding-top: 80px;
+    color: white;
+    border-top: solid 3px black;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.home-title {
+    font-size: 70px;
+    font-weight: 600;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+.home-sub  {
+    font-weight: 400;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+}
+.container-home {
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    top: 45%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+button {
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: white;
+    color: rgb(138, 39, 39);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 60%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+}
+button:hover {
+    background-color: rgb(220, 220, 220);
+}
+.container-home {
+    margin-top: 40px;
+}
+.home-image-png {
+    width: 594.5px;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: rgb(138, 39, 39);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-top: solid 3px black;
+}
